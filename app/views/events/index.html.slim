@@ -1,0 +1,11 @@
+p style="color: green" = notice
+
+h1 Events
+
+#events
+  - @events.each do |event|
+    == render event
+    p
+      = link_to "Show this event", event
+
+= link_to "New event", new_event_path
