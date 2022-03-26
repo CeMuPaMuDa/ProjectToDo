@@ -33,6 +33,7 @@ module ProjectToDo
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.paths.add Rails.root.join('lib').to_s, eager_load: true
 
     initializer 'load_slim_ext' do
       ActiveSupport.on_load(:after_initialize) do
