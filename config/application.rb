@@ -33,7 +33,7 @@ module ProjectToDo
     # config.eager_load_paths << Rails.root.join("extras")
 
     initializer 'load_slim_ext' do
-      ActiveSupport.on_load(:action_view) do
+      ActiveSupport.on_load(:after_initialize) do
         binding.pry
         Slim::Generators::ScaffoldGenerator.prepend Slim::SlimExt
       end
