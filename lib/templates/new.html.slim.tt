@@ -5,4 +5,4 @@ h1 New <%= human_name.downcase %>
 br
 
 div
-  = link_to "Back to <%= human_name.pluralize.downcase %>", <%= index_helper(type: :path) %>
+  = link_to "Back to <%= human_name.pluralize.downcase %>", <%= index_helper %>
