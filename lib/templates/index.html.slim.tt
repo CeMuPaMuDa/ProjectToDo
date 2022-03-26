@@ -8,4 +8,4 @@ h1 <%= human_name.pluralize %>
     p
       = link_to "Show this <%= human_name.downcase %>", <%= model_resource_name %>
 
-= link_to "New <%= human_name.downcase %>", <%= new_helper(type: :path) %>
+= link_to "New <%= human_name.downcase %>", <%= new_helper %>
