@@ -35,7 +35,7 @@ module ProjectToDo
     # Don't generate system test files.
     config.generators do |g|
       g.orm              :active_record
-      g.template_engine  :slim
+      g.template_engine  :erb
       g.system_tests     nil
       g.test_framework   nil
       g.helper           false
