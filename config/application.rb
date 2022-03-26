@@ -19,7 +19,6 @@ require 'generators/slim/scaffold/scaffold_generator.rb'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-binding.pry
 
 module ProjectToDo
   class Application < Rails::Application
@@ -37,7 +36,6 @@ module ProjectToDo
 
     initializer 'load_slim_ext' do
       ActiveSupport.on_load(:after_initialize) do
-        binding.pry
         Slim::Generators::ScaffoldGenerator.prepend Slim::SlimExt
       end
     end
