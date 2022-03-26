@@ -1,0 +1,24 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+AllCops:
+  TargetRubyVersion: 3.0
+  Exclude:
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'spec/**/*'
+    - 'db/migrate/**/*'
+    - 'db/seeds/**/*'
+    - 'db/schema.rb'
+    - 'config/**/*'
+    - 'bin/**/*'
+Style/AsciiComments:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Naming/MethodParameterName:
+  Enabled: false
+Naming/PredicateName:
+  Enabled: false
+Style/ClassVars:
+  Enabled: false
