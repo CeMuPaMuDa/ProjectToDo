@@ -14,6 +14,7 @@ require "action_view/railtie"
 # require "action_cable/engine"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
+require 'generators/slim/scaffold/scaffold_generator.rb'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -31,6 +32,13 @@ module ProjectToDo
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.paths.add Rails.root.join('lib').to_s, eager_load: true
+
+    initializer 'load_slim_ext' do
+      ActiveSupport.on_load(:after_initialize) do
+        Slim::Generators::ScaffoldGenerator.prepend Slim::SlimExt
+      end
+    end
 
     # Don't generate system test files.
     config.generators do |g|
