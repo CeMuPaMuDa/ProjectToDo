@@ -1,6 +1,5 @@
 module Slim::SlimExt
   def copy_view_files
-    binding.pry
     available_views.each do |view|
       filename = filename_with_extensions view
       # binding.pry
