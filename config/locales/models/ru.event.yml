@@ -1,0 +1,10 @@
+ru:
+  activerecord:
+    models:
+      event: Событие
+    attributes:
+      event:
+        title: Название
+        done: Выполнено
+        created_at: Создано
+        updated_at: Изменено

@@ -1,0 +1,11 @@
+en:
+  activerecord:
+    models:
+      event: Event
+    attributes:
+      event:
+        title: Title
+        done: Done
+        created_at: Created at
+        updated_at: Updated at
+    

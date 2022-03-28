@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :events
-  get 'home/index'
-  root 'home#index'
+  scope '(:locale)' do
+    resources :events
+    get 'home/index'
+    root 'home#index'
+  end  
 end
