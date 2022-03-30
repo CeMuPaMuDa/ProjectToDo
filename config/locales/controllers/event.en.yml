@@ -1,0 +1,9 @@
+en:
+  events:
+    create:
+      notice: Event was successfully created
+    update:
+      notice: Event was successfully updated
+    destroy: 
+      notice: Event was successfully destroyed
+    

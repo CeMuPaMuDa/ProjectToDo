@@ -2,16 +2,14 @@ uk:
   activerecord:
     models:
       event:
-        one: Подія
-        nominative: Подія
-        accusative: Подію
-        few: Події
-        many: Подій
-        other: Події
+        one: завдання
+        few: завдання
+        many: завдань
+        other: завдання
     attributes:
       event:
         title: Назва
         done: Виконано
         created_at: Створено
-        updated_at: Оновлено 
+        updated_at: Оновлено   
 

@@ -1,0 +1,8 @@
+ru:
+  events:
+    create:
+      notice: Event was successfully created
+    update:
+      notice: Событие успешно сохранено
+    destroy: 
+      notice: Событие успешно удалено

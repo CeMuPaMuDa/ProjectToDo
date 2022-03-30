@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem "sprockets-rails"
 gem 'falcon', '~> 0.39.2'
 gem "pg", "~> 1.1"
+gem 'i18n'
 gem 'rails-i18n'
 gem 'sassc-rails'
 gem 'slim-rails', '~> 3.4'

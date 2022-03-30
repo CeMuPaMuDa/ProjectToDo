@@ -1,1 +1,13 @@
 en:
+  events:
+    new:
+      title: New event
+      back_link: Back to events
+  shared:    
+    header:
+      home: Home
+      events: Event
+  home:
+    index:
+      welcome: Welcome to the ToDo project!
+      information: 'Try creating your own personal to-do list. Follow the link to get started: '      

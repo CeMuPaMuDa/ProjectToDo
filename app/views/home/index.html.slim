@@ -1,2 +1,6 @@
-h1 Home#index
-p Find me in app/views/home/index.html.slim
+h1.text-info.text-center
+  = t('.welcome')
+p.text-light
+  = t('.information')
+p
+  = link_to t('shared.header.events'), events_path, class: 'text-warning'

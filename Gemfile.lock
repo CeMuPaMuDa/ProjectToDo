@@ -257,6 +257,7 @@ DEPENDENCIES
   bootsnap
   bootstrap
   falcon (~> 0.39.2)
+  i18n
   importmap-rails
   pg (~> 1.1)
   rails (~> 7.0.2, >= 7.0.2.3)

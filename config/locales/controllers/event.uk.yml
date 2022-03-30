@@ -1,0 +1,9 @@
+uk:
+  events:
+    create:
+      notice: Завдання успішно створено
+    update:
+      notice: Завдання успішно збережено
+    destroy: 
+      notice: Завдання успішно видалено
+

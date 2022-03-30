@@ -2,8 +2,8 @@ en:
   activerecord:
     models:
       event:
-        one: Event
-        other: Events
+        one: event
+        other: events
     attributes:
       event:
         title: Title
