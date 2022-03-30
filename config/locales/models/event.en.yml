@@ -1,7 +1,9 @@
 en:
   activerecord:
     models:
-      event: Event
+      event:
+        one: Event
+        other: Events
     attributes:
       event:
         title: Title

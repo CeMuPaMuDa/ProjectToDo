@@ -18,14 +18,13 @@ require "action_view/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Proj
+module ProjectToDo
   class Application < Rails::Application
     config.load_defaults 7.0
     config.i18n.available_locales = %i[en ru uk]
     config.i18n.default_locale = :uk
     config.time_zone = 'Kyiv'
     config.paths.add Rails.root.join('lib').to_s, eager_load: true
-    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.yml')]
     config.generators do |g|
       g.orm              :active_record
       g.template_engine  :slim

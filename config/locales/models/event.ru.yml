@@ -1,0 +1,16 @@
+ru:
+  activerecord:
+    models:
+      event:
+        one: Событие
+        nominative: Событие
+        accusative: Событие
+        few: События
+        many: Событий
+        other: События
+    attributes:
+      event:
+        title: Название
+        done: Выполнено
+        created_at: Создано
+        updated_at: Изменено
