@@ -6,13 +6,13 @@
         - @event.errors.each do |error|
           li = error.full_message
 
-  div
+  div.text-light
     = form.label :title, style: "display: block"
     = form.text_field :title
 
-  div
+  div.text-light
     = form.label :done, style: "display: block"
     = form.check_box :done
 
-  div
+  div.text-light
     = form.submit
